@@ -6,6 +6,11 @@ const routes: Routes = [
   {
     path: 'estrutura',
     loadChildren: () => import('./estrutura/estrutura-module').then(m => m.EstruturaModule)
+  },
+
+  {
+    path: 'dados',
+    loadChildren: () => import('./dados/dados-module').then(m => m.DadosModule)
   }
 ];
 
